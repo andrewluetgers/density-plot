@@ -1,14 +1,13 @@
 {
-	"name": "evaluate",
+	"name": "density-plot",
 	"version": "1.0.0",
-	"description": "",
+	"description": "a simple density plot / 2D histogram / heatmap",
 	"main": "src/density-plot.js",
 	"scripts": {
 		"dev": "webpack -w",
 		"build": "webpack -p"
 	},
-	"author": "Andrew Luetgers <andrew.luetgers@gmail.com> (http://www.andrewluetgers.com/)",
-	"license": "ISC",
+	"author": "Andrew Luetgers <andrew.luetgers@gmail.com>",
 	"dependencies": {
 		"d3-array": "^1.2.1",
 		"d3-axis": "^1.0.8",
@@ -23,5 +22,21 @@
 		"babel-core": "^6.26.0",
 		"babel-loader": "^7.1.2",
 		"babel-preset-env": "^1.6.1"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "https:/github.com/andrewluetgers/density-plot.git"
+	},
+	"keywords": [
+		"density",
+		"plot",
+		"heatmap",
+		"2D",
+		"histogram"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/andrewluetgers/density-plot/issues"
+	},
+	"homepage": "https://github.com/andrewluetgers/density-plot"
 }

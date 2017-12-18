@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Fly LSH Algorithm</title>
+	<title>Density Plot Examples</title>
 	<style>
 
 		body {
@@ -27,6 +27,13 @@
 		.plot {
 			position: relative;
 			float: left;
+		}
+
+		.clear {
+			clear: both;
+			height: 0;
+			font-size: 0;
+			line-height: 0;
 		}
 
 		.plot>canvas,
@@ -73,12 +80,25 @@
 			opacity: 0.999;
 		}
 
+		body {
+			position: relative;
+		}
+
+		#dynamic {
+			position: relative;
+			width: 100%;
+		}
+
 	</style>
 </head>
 <body>
 	<div id="tip"></div>
-	<div id="plot1"></div>
-	<div id="plot2"></div>
+	<div id="dynamic">
+		<div id="dynamic1"></div>
+		<div id="dynamic2"></div>
+		<br class="clear"/>
+	</div>
+
 	<script src="../dist/density-plot.js"></script>
 	<script src="assets/app.js"></script>
 </body>

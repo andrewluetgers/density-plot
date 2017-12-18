@@ -163,7 +163,7 @@ function densityPlot(buckets, opts, _div, _canvas) {
 				.attr("transform", "rotate(-90)");
 		}
 		
-		if (hasYAxes) {
+		if (hasXAxes) {
 			// y-axis
 			svg.append("g")
 				.attr("class", "y axis")

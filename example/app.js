@@ -14,7 +14,6 @@ function randomColorType() {
 }
 
 densityPlot(data1, {
-	target: document.getElementById("plot1"),
 	min: -1,
 	max: 1,
 	height: 200,
@@ -32,8 +31,9 @@ function randomChart() {
 		],
 		algo = algos[randInt(1)],
 		data = genData(randInt(100), randInt(100), algo.fn);
+	
 	densityPlot(data, {
-		target: document.getElementById("plot2"),
+		target: document.getElementById("dynamic2"),
 		noXAxes: !randInt(2),
 		noYAxes: !randInt(2),
 		noLegend: !randInt(2),
@@ -42,7 +42,7 @@ function randomChart() {
 		xTicks: randInt(10),
 		yTicks: randInt(10),
 		zTicks: randInt(10),
-		width: 200,
+		width: 390,
 		height: 200,
 		segments: randInt(100),
 		color: randomColorType(),
@@ -62,6 +62,7 @@ densityPlot(data2, {
 
 let data3 = genData(10, 10, (r, c)=>r+c);
 densityPlot(data3, {
+	
 	scale: 20,
 	min: 0,
 	max: 20,
@@ -70,7 +71,8 @@ densityPlot(data3, {
 
 let data4 = genData(100, 100, (r, c)=>((r+c)*2) * Math.random()) ;
 let update = densityPlot(data4, {
-	id: "largePlot",
+	id: "dynamicPlot",
+	target: document.getElementById("dynamic1"),
 	min: 0,
 	max: 400,
 	scale: 2,
@@ -84,7 +86,8 @@ let update = densityPlot(data4, {
 setInterval(function() {
 	let data = genData(100, 100, (r, c)=>((r+c)*2) * Math.random());
 	update(data);
-	if (tipId === "largePlotCanvas") {
+	// update the tip on the l
+	if (tipId === "dynamicPlotCanvas") {
 		tip.innerText = Math.round(data[tipX][tipY] * 100) / 100;
 	}
 }, 60);
@@ -103,11 +106,11 @@ function getHandler(data) {
 	};
 }
 
-let data5 = genData(1000, 1000, (r, c)=>((r+c)*2) * Math.random()) ;
+let data5 = genData(660, 660, (r, c)=>((r+c)*2) * Math.random()) ;
 densityPlot(data5, {
 	noAxes: true,
 	min: 0,
-	max: 4000,
+	max: 2620,
 	segments: 20,
 	zTicks: 20,
 	color: "Rainbow",
