@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fly LSH Algorithm</title>
+	<style>
+
+		body {
+			font: 10px sans-serif;
+		}
+
+		.label {
+			font-weight: bold;
+		}
+
+		.tile {
+			shape-rendering: crispEdges;
+		}
+
+		.axis path,
+		.axis line {
+			fill: none;
+			stroke: #000;
+			shape-rendering: crispEdges;
+		}
+
+		.plot {
+			position: relative;
+			float: left;
+		}
+
+		.plot>canvas,
+		.plot>svg {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.plot>svg {
+			z-index: 1;
+		}
+
+		.plot>canvas {
+			z-index: 2;
+			image-rendering: optimizeSpeed;             /* Older versions of FF          */
+			image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+			image-rendering: -webkit-optimize-contrast; /* Safari                        */
+			image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+			image-rendering: pixelated;                 /* Awesome future-browsers       */
+			-ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+		}
+
+		#tip {
+			position: absolute;
+			z-index: 10;
+			padding: 10px;
+			margin-top: -20px;
+			margin-left: 40px;
+			text-align: center;
+			font-size: 16px;
+			width: 60px;
+			border: solid 1px #ccccff;
+			background: white;
+		}
+
+		.plotCanvas {
+			background-color: rgba(0, 0, 0, .5);
+			opacity: 1;
+		}
+
+		.plotCanvas.swap {
+			background-color: rgba(255, 255, 255, .5);
+			opacity: 0.999;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="tip"></div>
+	<div id="plot1"></div>
+	<div id="plot2"></div>
+	<script src="../dist/density-plot.js"></script>
+	<script src="assets/app.js"></script>
+</body>
+</html>
