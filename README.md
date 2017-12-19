@@ -14,7 +14,7 @@ Browser:
 
 In the dist folder is minified version of the code built for loading into the browser which uses the global variable "densityPlot".
 
-See example folder for usage or this [plunkr](https://run.plnkr.co/preview/cjbd112es00063h5yaujsug9h/).
+See example folder for usage or this [plunkr](https://plnkr.co/edit/8mgbeZHOXizyHNDqUQko?p=preview).
 
 
 <img width="498" alt="screen shot 2017-12-18 at 5 27 55 pm" src="https://user-images.githubusercontent.com/232036/34133285-833991de-e419-11e7-96d7-a3d9f02eaadd.png">
