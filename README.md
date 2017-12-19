@@ -10,8 +10,8 @@ Node:
 
 Browser: In the dist folder is minified version of the code built for loading into the browser which uses the global variable "densityPlot".
 
-see example for usage
-https://run.plnkr.co/preview/cjbd112es00063h5yaujsug9h/
+see example folder for usage or this [plunkr](https://run.plnkr.co/preview/cjbd112es00063h5yaujsug9h/)
+
 
 Build:
 ```
