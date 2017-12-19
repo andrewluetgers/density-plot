@@ -1,7 +1,7 @@
 # density-plot
 a simple density plot / 2D histogram / heatmap
 
-Uses D3 for [axes](https://github.com/d3/d3-axis) and color [scales](https://github.com/d3/d3-scale) as well as [d3-scale-chromtic](https://github.com/d3/d3-scale-chromatic)
+Uses D3 for [axes](https://github.com/d3/d3-axis) and color [scales](https://github.com/d3/d3-scale) as well as [d3-scale-chromatic](https://github.com/d3/d3-scale-chromatic)
 Uses 2D canvas for the plot. 
 
 Because the plot uses canvas pixels as opposed to svg rectangles this implementation is likely better suited for large plots with tens of thousands of data points.
