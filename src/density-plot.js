@@ -227,5 +227,4 @@ function setCanvasPixels(data, canvas, z) {
 	ctx.putImageData(imageData, 0, 0, 0, 0, canvas.width, canvas.height);
 }
 
-
-module.exports = densityPlot;
+export {densityPlot};
