@@ -1,6 +1,6 @@
 {
 	"name": "density-plot",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A simple density plot / 2D histogram / heatmap.",
 	"main": "src/density-plot.js",
 	"scripts": {
