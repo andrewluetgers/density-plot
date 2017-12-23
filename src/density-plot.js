@@ -217,7 +217,7 @@ function setCanvasPixels(data, canvas, z) {
 	data.forEach(row => {
 		row.forEach(val => {
 			val = val || 0;
-			let c = color(z(val));
+			let c = color(z(val)) || {r:0, g:0, b:0};
 			rgb[i]     = c.r; // red
 			rgb[i + 1] = c.g; // green
 			rgb[i + 2] = c.b; // blue
