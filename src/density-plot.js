@@ -11,6 +11,7 @@ import { color } from "d3-color";
 import { select } from "d3-selection";
 import { range } from 'lodash'
 
+// be more inspired by https://seaborn.pydata.org/generated/seaborn.heatmap.html
 
 let scales = Object.assign({}, {
 	interpolateViridis, interpolateRainbow,
@@ -215,6 +216,7 @@ function setCanvasPixels(data, canvas, z) {
 	
 	data.forEach(row => {
 		row.forEach(val => {
+			val = val || 0;
 			let c = color(z(val));
 			rgb[i]     = c.r; // red
 			rgb[i + 1] = c.g; // green
